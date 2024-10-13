@@ -4,7 +4,7 @@ Document the process of training and evaluating a simple linear regression model
 
 2.Deep Learning: 
 Explain the architecture and training process of a convolutional neural network (CNN).
-Refer [this document](Tutorials/Architecture_Of_CNN.md).
+Refer [this document](Architecture_Of_CNN.md).
 
 
 3.Deployment: 
