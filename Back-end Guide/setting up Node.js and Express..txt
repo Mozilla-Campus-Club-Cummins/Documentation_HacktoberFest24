@@ -1,0 +1,37 @@
+
+## 1. Setting Up Node.js and Express
+
+This section elaborates on the initial setup with more options for configuration.
+
+### Step 1: Installing Node.js
+Before building your API, you need **Node.js** installed on your machine.
+
+- **To check if Node.js is already installed**: 
+  Run the following command in your terminal:
+------------------------------------------------------------------------------------------------------
+  node -v
+  ----------------------------------------------------------------------------------------------------
+  If it prints a version number, Node.js is installed. If not, you can download and install it from [Node.js official website](https://nodejs.org).
+
+### Step 2: Initializing the Project
+Once Node.js is installed, follow these steps to set up the project:
+--------------------------------------------------------------------------------------------------------
+mkdir my-api
+cd my-api
+npm init -y
+------------------------------------------------------------------------------------------------------------
+This creates a `package.json` file, which will store information about the project and manage the dependencies.
+
+### Step 3: Installing Express.js
+Express is a fast and flexible web framework for Node.js. You can install it via **npm**:
+------------------------------------------------------------------------------------------------------------
+npm install express
+-------------------------------------------------------------------------------------------------------------
+
+### Step 4: Installing Nodemon (Optional)
+If you want the server to automatically restart whenever changes are made, install **Nodemon**:
+-------------------------------------------------------------------------------------------------------------
+npm install -g nodemon
+----------------------------------------------------------------------------------------------------------------
+Now, you can run your project using `nodemon server.js` instead of `node server.js`, and the server will automatically restart when code changes are detected.
+
