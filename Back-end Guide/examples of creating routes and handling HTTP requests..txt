@@ -1,0 +1,45 @@
+
+
+## 2. Creating Routes and Handling HTTP Requests
+
+In any backend system, **routing** is the process of defining how the API responds to different client requests. Express.js provides a simple way to handle routing based on HTTP methods and URLs.
+
+### Step 5: Creating Basic Routes
+The basic Express routes we've already created handle **GET**, **POST**, **PUT**, and **DELETE** requests. Let's now break down how each works and extend them with useful features like error handling and query parameters.
+
+#### GET Request with Query Parameters
+You can extend GET routes by adding query parameters, allowing clients to filter data.
+
+**Example**: Retrieve filtered items based on the `name` parameter.
+
+----------------------------------------javascript-----------------------------------
+// GET request with query parameter to filter items
+app.get('/items', (req, res) => {
+  const { name } = req.query; // Access query parameters
+  const filteredItems = items.filter(item => item.name.includes(name || ''));
+  res.json(filteredItems);
+});
+
+-----------------------------------------------------------------------------------------------
+
+#### POST Request with Error Handling
+You can add validation to the `POST` request to ensure that required fields are included.
+
+----------------------------------------javascript---------------------------------------------
+// POST request with validation
+app.post('/items', (req, res) => {
+  const { name, description } = req.body;
+  if (!name || !description) {
+    return res.status(400).json({ error: 'Name and description are required' });
+  }
+  const newItem = {
+    id: items.length + 1,
+    name,
+    description
+  };
+  items.push(newItem);
+  res.status(201).json(newItem);
+});
+
+-----------------------------------------------------------------------------------------------
+- **Error Handling**: If `name` or `description` is missing, it returns a `400 Bad Request`.
