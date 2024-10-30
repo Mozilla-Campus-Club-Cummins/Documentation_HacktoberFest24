@@ -1,0 +1,8 @@
+Feature engineering is the process of selecting, modifying, or creating new features (variables) in a dataset to improve the performance of machine learning models.
+Think of it like fine-tuning the information that a model receives to help it make better predictions.
+
+For example, if you’re building a model to predict house prices, you might start with features like square footage, number of rooms, and location.
+But sometimes, these raw features don’t fully capture patterns in the data. So, you could create new features like "price per square foot" or "distance to city center" to help the model see more relevant information.
+
+In a nutshell, feature engineering is about making the data more meaningful and structured for the model, so it can learn faster and more accurately. 
+It's often one of the most creative and critical steps in building a successful model.
