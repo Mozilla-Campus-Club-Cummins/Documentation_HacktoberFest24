@@ -1,3 +1,0 @@
-Feature engineering is the process of selecting, modifying, or creating new variables from raw data to improve machine learning model performance. 
-It involves choosing relevant features, transforming them (like scaling or encoding), and generating new features from existing ones.
-Effective feature engineering enhances model accuracy and interpretability.
